@@ -12,12 +12,12 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:layout_width="wrap_content"
-            android:text="R. Áries"
             style="@style/MyFoodButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
-            android:textSize="13sp"
-            android:layout_height="wrap_content"/>
+            android:text="R. Áries"
+            android:textSize="13sp" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -25,7 +25,8 @@
             android:paddingHorizontal="16dp"
             android:layout_height="wrap_content"
             app:tint="@color/red"
-            android:src="@drawable/ic_baseline_qr_code_scanner_24"/>
+            android:src="@drawable/ic_baseline_qr_code_scanner_24"
+            android:contentDescription="qrcode" />
     </androidx.appcompat.widget.Toolbar>
 
     <com.google.android.material.tabs.TabLayout
@@ -33,7 +34,7 @@
         app:tabIndicatorHeight="1dp"
         app:tabIndicatorColor="@color/red"
         app:tabSelectedTextColor="@color/red"
-        
+        app:tabTextAppearance="@style/MyFoodTabLayoutTextAppearance"
         app:tabTextColor="@color/grey"
         android:id="@+id/add_tab"
         app:tabMode="auto"
@@ -48,5 +49,4 @@
         android:layout_height="match_parent">
 
     </androidx.viewpager2.widget.ViewPager2>
-
 </LinearLayout>
